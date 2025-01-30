@@ -1,0 +1,22 @@
+:root{
+    --colorbckgcontprncplsec1: rgb(128, 128, 128);
+}
+.contsec1paginiciocarrusel{
+    background-color: var(--colorbckgcontprncplsec1);
+    max-height: 82vh;
+    min-height: 400px;
+    padding: 0% !important;
+    overflow: hidden;
+}
+.carousel-inner .carousel-item{
+    max-height: 82vh;
+    min-height: 400px;
+}
+.carousel-inner .carousel-item img{
+    object-fit: cover;
+    height: 400px;
+}
+.contsec{
+    max-height:530px;
+    overflow-y: auto;
+}

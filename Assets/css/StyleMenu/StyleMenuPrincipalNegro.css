@@ -1,0 +1,62 @@
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.bg-menuPrincipal{
+    background: black !important;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.size-logo{
+    width: 23vw; min-width: 210px;
+}
+.size-contenticonmenu{
+    width: 80px !important;
+}
+.size-iconsmenu{
+    height:2vw; min-height: 25px;
+}
+.size-user{
+    height:3vw; min-height: 30px;
+}
+.size-dropdownuser{
+    width: 240px;
+}
+.size-userdrop{
+    height:4.2vw; min-height: 32px;
+}
+.size-iconsdropuser{
+    min-height: 30px !important;
+    height: 3vw;
+    max-height: 40px !important;
+}
+.contentmenulat{
+    width: 300px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.nav-item a{
+    color: #000 !important;
+    letter-spacing: 0.15em;
+}
+.nav-link[data-bs-toggle="dropdown"]::after{
+    border: solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position:absolute;
+    right: .8rem;
+    margin: .5em;
+    transform: rotate(45deg);
+}
+.dropdwnmenu{
+    width: 250px !important;
+    background:rgba(0,0,0,.05);
+    margin-left: -.3rem;
+}
+.dropdwnmenu a{
+    letter-spacing: 0.1em !important;
+}
+a.dropdown-item:hover{
+    border-left: 3px solid gray;
+}

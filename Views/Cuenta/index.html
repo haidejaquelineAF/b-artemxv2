@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="icon" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/LogoCorazon_b-artemx.png">
+    <!--Styles-->
+        <!--bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Icons-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--Mis Styles-->
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleGeneral/StyleGeneral.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleMenu/StyleMenuPrincipalNegro.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StylePagInicio/StylePagInicio.css">
+    <!--JQuery-->
+        <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/Tools/Jquery/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+        <div class="container-fluid bg-menuPrincipal px-0" id="menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-block d-sm-none text-center pt-sm-1 pt-3">
+                        <a class="text-decoration-none text-white fs-5" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                            <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-transparent">
+
+                    <button type="button" class="navbar-toggler border-0 ps-4 size-iconmenu" data-bs-toggle="offcanvas"  data-bs-target="#menubam6">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="text-decoration-none fs-4 ps-2 d-none d-sm-block" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                        <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                    </a>
+                    <div class="container d-flex justify-content-end col">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn p-0"><i class="bi bi-bell fs-5 px-1 text-white"></i></button>
+                            <button type="button" class="btn p-0"><i class="bi bi-cart2 text-white fs-5 px-1"></i></button>
+                            <button type="button" class="btn p-0"><img class="size-iconsmenu"src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_languageFFFFFF.png"></button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-user">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end rounded-0 size-dropdownuser" aria-labelledby="btnGroupDrop1">
+                                    <li class="px-2 row d-flex align-items-center">
+                                        <div class="col-3">
+                                            <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-userdrop">
+                                        </div>
+                                        <div class="col-9 pt-1">
+                                            <p class="fw-bold pt-1">Artista/Tenedor
+                                            <small class="fw-light pt-2">haide.aguilar14@gmail.com</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/"><i class="bi bi-person-circle fs-5 pe-3 text-secondary"></i>Mi cuenta</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-bell-fill fs-5 pe-3 text-secondary"></i>Notificaciones</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-gear-fill fs-5 pe-3 text-secondary"></i>Configuración</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-headset fs-5 pe-3 text-secondary"></i>Ayuda y soporte</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-book-fill fs-5 pe-3 text-secondary"></i>Política de privacidad</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/"><i class="bi bi-power fs-5 pe-3 text-secondary"></i>Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="offcanvas offcanvas-start bg-white contentmenulat" id="menubam6" tabindex="-1">
+                        <div class="offcanvas-header pb-0 pt-2 pb-2 rounded-0 bg-menuPrincipal">
+                            <a class="text-decoration-none fs-5 text-center" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                                <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                            </a>
+                            <button  type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                            <ul class="navbar-nav justify-content-evenly pt-3">
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio" class="nav-link">
+                                        <i class="bi bi-house-door-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Inicio</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-person-circle fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Cuenta</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/">Cuenta</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Perfil/">Perfil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bell-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Notificaciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-handbag-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Mis compras</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bookmark-heart-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Favoritos</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-credit-card-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Suscripciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Historial/" class="nav-link ">
+                                        <i class="bi bi-clock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Historial</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-lock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Acceso y seguridad</strong>
+                                    </a>
+                                </li>                   
+                            </ul>
+                        </div>
+                        <div class="pb-3 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/profile.php?id=61557621746159" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_facebook.png" width="20">
+                            </a>
+                            <a href="https://www.instagram.com/bolsaartemx_oficial/" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_instagram.png" width="15">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC0vpIwyHVp3NGFfJir7KivA" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_youtube.png" width="20">
+                            </a>
+                            <a href="https://twitter.com/Bolsaartemx" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_tiktok.png" width="15">
+                            </a>
+                            <a href="https://www.tiktok.com/@bolsaartemx?_t=8lRiyMfUAjO&_r=1" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_linkedin.png" width="20">
+                            </a>
+                        </div>
+                    </section>
+
+            </div>
+                    
+        </div>            
+    <!--FIN MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+
+        <!--CONFIG. CUENTA USUARIO-->
+        <style>
+            .size-fotoperfil{
+                width: max-content;
+                height: auto;
+                max-height: 200px;
+            }
+            .titulo-configcuenta{
+                letter-spacing: 0.4em;
+                font-size: calc(.8em + .8vw);
+            }
+            .icons-configcuenta{
+                height:25px;
+            }  
+
+            @media screen and (max-width: 575px) {
+                .size-fotoperfil{
+                    width: 200px !important;
+                    height: auto;
+                }
+            }
+        </style>
+        <div class="container-fluid px-0 overflow-auto pb-5" id="contPrincipal">
+            <h2 class="fw-light text-center pt-5 pb-2 titulo-configcuenta text-break">CONFIGURACIÓN</h2>
+            <hr>
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-center bg-secondary px-sm-5 py-md-2 mx-sm-auto  p-0 m-0">
+                    <form class="row g-3 w-100 bg-white m-md-5 my-1 pb-3 px-md-3 justify-content-center" method="post" id="frmActualizarMiInfo">
+                        <h5 class="pt-3 fw-bold text-break">CUENTA</h5>
+                        <hr class="mt-1">  
+
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <span>Foto de perfil</span>
+                                <div class="card rounded-0 px-sm-0 px-2" id="contimg">
+                                    <div class="card-body mx-sm-auto mx-2 pt-2 px-sm-0">
+                                        <label for="imagen"  id="icon-image" class="btn btn-dark rounded-0"><i class="bi bi-image"></i></label>
+                                        <span id="icon-cerrar"></span>
+                                        <br>
+                                        <input id="imagen" class="d-none" type="file" name="imagen" onchange="preview(event);">
+                                        <input type="hidden" id="foto_actual" name="foto_actual">
+                                        <img class="img-fluid size-fotoperfil mx-auto d-block pt-1 px-sm-2" id="img-preview">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nombre_cc" class="form-label">Nombre</label>
+                                    <input type="hidden" id="idMiCuenta" name="idMiCuenta">
+                                    <input type="text" class="form-control rounded-0 text-uppercase text-secondary" id="nombre_cc" name="nombre_cc" value="HAIDE JAQUELINE AGUILAR FLORES" disabled>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <label for="correo_cc" class="form-label">Correo</label>
+                                    <input type="text" class="form-control rounded-0 text-secondary" id="correo_cc" name="correo_cc" value="haide.aguilar14@gmail.com" disabled>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <label for="residencia_cc" class="form-label">Residencia</label>
+                                    <input type="text" class="form-control rounded-0 text-secondary" id="residencia_cc" name="residencia_cc" value="98700 OJOCALIENTE, ZACATECAS, MEXICO" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="col-sm-12">
+                            <label for="desc_propia_cc" class="form-label">Descripción propia</label>
+                            <textarea class="form-control rounded-0" aria-label="With textarea" id='desc_propia_cc' name='desc_propia_cc' placeholder="Agrega una descripción sobre ti en pocas palabras" maxlength="300"></textarea>
+                            <div class="invalid-feedback" id="alerta"></div>                         
+                        </div>
+                        <div class="col-12">
+                            <div class="from-group">
+                                <span>Agrega tu CV</span>
+                                <div class="card rounded-0" id="contfile">
+                                    <div class="card-body"> 
+                                        <label for="filecv_cc"  id="icon-upload" class="btn btn-dark rounded-0"><i class="bi bi-cloud-upload-fill"></i></label>
+                                        <span id="icon-eliminar"></span>
+                                        <div class="d-flex align-items-center mt-2">
+                                                <input id="filecv_cc" class="d-none" type="file" name="filecv_cc" accept="application/pdf" onchange="previewDoc(event);">
+                                                <input type="hidden" id="doc_actual" name="doc_actual">
+                                                <img class="img-thumbnail border-0 mx-0" id="doc-preview" style="max-width:60px; max-height:60px;">
+                                                <p class="d-none text-break" id="nombrecv"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-none text-danger" id="alerta2"></div>
+                            </div>    
+                        </div>
+                        <div class="col-12">
+                            <label for="linkportf_cc" class="form-label">Enlace a tu portafolio</label>
+                            <input type="text" class="form-control rounded-0" id="linkportf_cc" name="linkportf_cc" required>
+                            <div class="invalid-feedback">Inválido, vuelva a ingresar el enlace</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="linkfacebk_cc" class="form-label">Enlace a tu cuenta de facebook</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-facebook fs-4"></i></span>
+                                <input type="text" class="form-control rounded-0" id="linkfacebk_cc" name="linkfacebk_cc" required>
+                                <div class="invalid-feedback">Inválido, vuelva a ingresar el enlace</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="linkinsta_cc" class="form-label">Enlace a tu cuenta de Instagram</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-instagram fs-4"></i></span>
+                                <input type="text" class="form-control rounded-0" id="linkinsta_cc" name="linkinsta_cc" required>
+                                <div class="invalid-feedback">Inválido, vuelva a ingresar el enlace</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="linkx_cc" class="form-label">Enlace a tu cuenta de X</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-twitter-x fs-4"></i></span>
+                                <input type="text" class="form-control rounded-0" id="linkx_cc" name="linkx_cc" required>
+                                <div class="invalid-feedback">Inválido, vuelva a ingresar el enlace</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="linktktk_cc" class="form-label">Enlace a tu cuenta de Tiktok</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-tiktok fs-4"></i></span>
+                                <input type="text" class="form-control rounded-0" id="linktktk_cc" name="linktktk_cc" required>
+                                <div class="invalid-feedback">Inválido, vuelva a ingresar el enlace</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rolusuarioact_cc" class="form-label">Rol de usuario</label>
+                            <input type="text" class="form-control rounded-0 text-secondary" id="rolusuarioact_cc" name="rolusuarioact_cc" value="Cliente" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rolusuario_cc" class="form-label">Solicitar acceso como:</label>
+                            <select class="form-select rounded-0 text-secondary" id='rolusuario_cc' name='rolusuario_cc'  required>                                
+                                <option selected disabled value=""></option>
+                                <option value="1">Artista</option>
+                                <option value="2">Tenedor</option>
+                                <option value="3">Artista y Tenedor</option>
+                            </select>     
+                        </div>
+                        <div class="d-grid col-6 pt-4 pb-2">
+                            <button type="button" class="btn btn-dark rounded-0" id="btnGuardarCC" onclick="btnGuardarInfo(event);">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!--FIN CONFIG. CUENTA USUARIO-->
+               
+            
+    <!---JS------->
+        <!--JS-->
+            <script>
+                var altura = document.getElementById('menu').offsetHeight;
+                var total = window.innerHeight;
+                var resultado = parseInt(total) - parseInt(altura);
+                document.getElementById("contPrincipal").style.height = resultado + "px";
+            </script>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--SweetAlert2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--MIS JS-->
+        <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/js/JS_Cuenta/JS_infoCuenta_00_01.js"></script>
+
+        <!--FALTA AGREGAR LAS LICENCIAS Y DERECHOS DE AUTOR DE LAS HERRAMIENTAS QUE UTILIZAMOS-->
+</body>
+</html>

@@ -1,0 +1,122 @@
+.size-sec1home{
+    min-height: calc(21em + 21vw);
+}
+
+.bg-sec1home{
+    position: relative;
+    margin-top: 17%;  
+    z-index: 1;
+}
+.bg-general{
+    background-image: url('https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsFondos/bgGeneral_paghome.png');
+}
+#particles-js{
+    background:#000000;
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    top: 30% !important;
+    z-index: -1;
+}
+.contenedorsec1homemenunegro{
+    position: relative;
+    margin-top: 8%;  
+    z-index: 1;
+}
+.logoflotante img{
+    width: calc(17em + 17vw);
+    animation: movimiento 7s linear infinite;
+    z-index: 9 !important;
+    z-index: 100;
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateY(17px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes movimiento2 {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotar {
+    0%{
+        transform: translateY(-500px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-500px);
+    }
+    from{
+        transform: rotateY(-180deg);
+    }to{
+        transform: rotateY(180deg);
+    }
+}
+
+.size-carrusel{
+    width: calc(15em + 15vw); 
+    height: calc(10em + 15vw) !important;
+}
+.size-imgssec4home{
+    height: calc(10em + 10vw) !important;
+}
+.size-imgssec5home{
+    height: calc(17em + 17vw) !important;
+}
+.bg-sec6home{
+    background: linear-gradient(180deg, white 50%, #000000 50%);
+}
+.bg-subsec6home{
+    background: #e4e4e4;
+}
+.size-imgssec6home{
+    height: calc(11em + 12vw) !important;
+}
+.size-imgsec7home{
+    height: calc(12em + 12vw) !important;
+}
+.size-iconssec7home{
+    width:3.7vw; min-width: 30px;
+}
+.size-text1sec7home{
+    font-size:16px;
+}
+.size-text2sec7home{
+    font-size:14px;
+}
+.stitulo{
+    letter-spacing: .2em
+}
+
+@media (max-width: 767px) {
+    .bg-sec1home{
+        margin-top: 5%;
+    }
+
+    .logoflotante img{
+        width: calc(15em + 15vw);
+        animation: movimiento2 7s linear infinite;
+        z-index: 9 !important;
+        z-index: 100;
+    }
+
+}

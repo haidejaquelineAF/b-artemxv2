@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="icon" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/LogoCorazon_b-artemx.png">
+    <!--Styles-->
+        <!--bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Icons-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--Mis Styles-->
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleGeneral/StyleGeneral.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleMenu/StyleMenuPrincipalNegro.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StylePagInicio/StylePagInicio.css">
+    <!--JQuery-->
+        <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/Tools/Jquery/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+        <div class="container-fluid bg-menuPrincipal px-0" id="menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-block d-sm-none text-center pt-sm-1 pt-3">
+                        <a class="text-decoration-none text-white fs-5" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                            <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-transparent">
+
+                    <button type="button" class="navbar-toggler border-0 ps-4 size-iconmenu" data-bs-toggle="offcanvas"  data-bs-target="#menubam6">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="text-decoration-none fs-4 ps-2 d-none d-sm-block" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                        <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                    </a>
+                    <div class="container d-flex justify-content-end col">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn p-0"><i class="bi bi-bell fs-5 px-1 text-white"></i></button>
+                            <button type="button" class="btn p-0"><i class="bi bi-cart2 text-white fs-5 px-1"></i></button>
+                            <button type="button" class="btn p-0"><img class="size-iconsmenu"src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_languageFFFFFF.png"></button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-user">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end rounded-0 size-dropdownuser" aria-labelledby="btnGroupDrop1">
+                                    <li class="px-2 row d-flex align-items-center">
+                                        <div class="col-3">
+                                            <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-userdrop">
+                                        </div>
+                                        <div class="col-9 pt-1">
+                                            <p class="fw-bold pt-1">Artista/Tenedor
+                                            <small class="fw-light pt-2">haide.aguilar14@gmail.com</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/"><i class="bi bi-person-circle fs-5 pe-3 text-secondary"></i>Mi cuenta</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-bell-fill fs-5 pe-3 text-secondary"></i>Notificaciones</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-gear-fill fs-5 pe-3 text-secondary"></i>Configuración</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-headset fs-5 pe-3 text-secondary"></i>Ayuda y soporte</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-book-fill fs-5 pe-3 text-secondary"></i>Política de privacidad</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/"><i class="bi bi-power fs-5 pe-3 text-secondary"></i>Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="offcanvas offcanvas-start bg-white contentmenulat" id="menubam6" tabindex="-1">
+                        <div class="offcanvas-header pb-0 pt-2 pb-2 rounded-0 bg-menuPrincipal">
+                            <a class="text-decoration-none fs-5 text-center" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                                <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                            </a>
+                            <button  type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                            <ul class="navbar-nav justify-content-evenly pt-3">
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio" class="nav-link">
+                                        <i class="bi bi-house-door-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Inicio</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-person-circle fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Cuenta</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/">Cuenta</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Perfil/">Perfil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bell-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Notificaciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-handbag-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Mis compras</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bookmark-heart-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Favoritos</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-credit-card-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Suscripciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Historial/" class="nav-link ">
+                                        <i class="bi bi-clock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Historial</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-lock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Acceso y seguridad</strong>
+                                    </a>
+                                </li>                   
+                            </ul>
+                        </div>
+                        <div class="pb-3 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/profile.php?id=61557621746159" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_facebook.png" width="20">
+                            </a>
+                            <a href="https://www.instagram.com/bolsaartemx_oficial/" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_instagram.png" width="15">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC0vpIwyHVp3NGFfJir7KivA" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_youtube.png" width="20">
+                            </a>
+                            <a href="https://twitter.com/Bolsaartemx" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_tiktok.png" width="15">
+                            </a>
+                            <a href="https://www.tiktok.com/@bolsaartemx?_t=8lRiyMfUAjO&_r=1" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_linkedin.png" width="20">
+                            </a>
+                        </div>
+                    </section>
+
+            </div>
+                    
+        </div>            
+    <!--FIN MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+
+        <!--PERFIL ARTISTA-->
+            <div class="container-fluid px-0 overflow-auto pb-5" id="contPrincipal">
+                <header>
+                    <style>
+                        header {
+                            position: relative;
+                            background-color: black;
+                            height: 75vh;
+                            min-height: 25rem;
+                            width: 100%;
+                            overflow: hidden;
+                        }
+        
+                        header video {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            min-width: 100%;
+                            min-height: 100%;
+                            width: auto;
+                            height: auto;
+                            z-index: 0;
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                            -moz-transform: translateX(-50%) translateY(-50%);
+                            -webkit-transform: translateX(-50%) translateY(-50%);
+                            transform: translateX(-50%) translateY(-50%);
+                        }
+        
+                        header .container {
+                            position: relative;
+                            z-index: 2;
+                        }
+        
+                        header .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: black;
+                            opacity: 0.5;
+                            z-index: 1;
+                        }
+                    </style>
+                    <div class="overlay"></div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/Videos/wellcome2.mp4" type="video/mp4">
+                    </video>
+                    <div class="container h-100">
+                        <div class="d-flex h-100 text-center align-items-center">
+                        <div class="w-100 text-white">
+                            <h1 class="display-3 fs-1">Haide Jaqueline Aguilar Flores</h1>
+                            <p class="lead mb-0 fs-6">Artista | Tenedor | Experto valuador</p>
+                        </div>
+                        </div>
+                    </div>
+                </header>
+                <style>
+                    .size-fotoperfil{
+                        width: max-content;
+                        height: auto;
+                        max-height: 180px;
+                    }
+                </style>
+                <div class="container-fluid" id="continfusuarioperfil">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-menusecundarioperfil" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                        <!--SEC4_SUBSEC1 SOBRE MÍ-->
+                            <div class="container mt-md-4 mb-md-3 pb-3 pt-4" id="sec4subsec1sobremi">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4 col-sm-10 mb-5 border-0">
+                                        <h3 class="text-center">SOBRE MÍ</h3>
+                                        <p class="pt-4 lh-sm" style="text-align:justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto inventore ab laboriosam voluptas adipisci at illo? Iste a laborum quis!</p>
+                                        <div class="row">
+                                            <div class="col-12 mt-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p class="text-end"><strong>Mi currículum</strong></p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                    <button type="button" class="btn btn-outline-dark rounded-0" disabled><i class="bi bi-eye-fill"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-10 mb-5 border border-dark border-top-0 border-bottom-0">
+                                        <h3 class="text-center pt-md-0 pt-sm-4">MI INFORMACIÓN</h3>
+                                        <p class="pt-4 px-5 lh-sm text-break"><strong>Email:</strong> haide.aguilar14@gmail.com</p>
+                                        <p class="px-5 lh-sm"><strong>Dirección:</strong> Zacatecas, México</p>
+                                        <p class="px-5 lh-sm"><strong>RFC:</strong> AGT6794KSHY45</p>
+                                        <p class="px-5 lh-sm"><strong>Teléfono:</strong> 4589890046</p>
+                                        <p class="px-5 lh-sm"><strong>Fecha nacimiento:</strong> 30/09/1999</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-10 mb-5 border-0">
+                                        <h3 class="text-center pt-md-0 pt-sm-4">MI CONTACTO</h3>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 pt-2 px-5 text-center">
+                                                <img class="img-fluid"src="https://haidejaquelineaf.github.io/b-artemxv1/Files/img/FotosPerfilU/user.png" style="max-height: 30vh;">
+                                            </div>
+        
+                                            <div class="col-12 mt-3 text-center">
+                                                <button type="button" class="btn btn-outline-dark rounded-0 px-2 pt-1 pb-1"><i class="bi bi-instagram fs-5"></i></button>
+                                                <button type="button" class="btn btn-outline-dark rounded-0 px-2 pt-1 pb-1"><i class="bi bi-facebook fs-5"></i></button>
+                                                <button type="button" class="btn btn-outline-dark rounded-0 px-2 pt-1 pb-1"><i class="bi bi-twitter-x fs-5"></i></button>
+                                                <button type="button" class="btn btn-outline-dark rounded-0 px-2 pt-1 pb-1"><i class="bi bi-tiktok fs-5"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--FIN SEC4_SUBSEC1 SOBRE MÍ-->
+        
+                        <!--SEC4_SUBSEC2 FORMACIÓN Y EXPERIENCIA-->
+                            <div class="container-fluid mb-5" id="sec4subsec2formacionyexperiencia">
+                                <h2 class="text-center text-uppercase fs-1">Formación y experiencia profesional</h2>
+                                <h5 class="text-center text-muted text-uppercase fw-light fs-6">Formación académica y experiencia profesional adquirida</h5>
+        
+                                <div class="container pt-5">
+                                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-6 text-light">
+                                                            Estudios
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilestudios" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 pt-1">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-6 text-light">
+                                                            Cursos
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilcursos" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <div class="col-12 pt-1">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Pintura plástica</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2021</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12  border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-6 text-light">
+                                                            Experiencia
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                        <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilexperiencia" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <div class="col-12 pt-2" >
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Galería</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2021</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Galería</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2023</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-6 text-light">
+                                                            Premios y reconocimientos
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilpremios" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 pt-1">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">IPN</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2022</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-6 text-light">
+                                                            Exposiciones
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilexposiciones" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <div class="col-12 pt-1">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Pintura plástica</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2021</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card text-dark bg-light rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-7 text-light">
+                                                            Publicaciones<!--Catálogos, Publicaciones y revistas académicas, periódicos y revistas.-->
+                                                        </div>
+                                                        <div class="col-5 text-end">
+                                                            <button type="button" class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#mdlperfilpublicaciones" data-bs-whatever="@mdo"><i class="bi bi-plus-lg"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <div class="col-12 pt-2" >
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Galería</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2021</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 pt-2">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-6 text-start">Galería</div>
+                                                                        <div class="col-6 text-end"><span class="badge bg-primary rounded-0">2023</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 border-bottom">
+                                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illo.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+        
+                            </div>
+                        <!--FIN SEC4_SUBSEC2 FORMACIÓN Y EXPERIENCIA-->
+        
+                        <!--SEC4_SUBSEC3 MIS OBRAS-->
+                            <div class="container-fluid pt-3" id="sec4subsec3misobras">
+                                <h2 class="text-center text-uppercase fs-1">Obras destacadas</h2>
+                                <h5 class="text-center text-muted text-uppercase fw-light fs-6">Tus obras más populares en la galería</h5>
+        
+                                <div class="container pt-3 pb-4">
+                                    <div class="row">
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_01.PNG" class="card-img rounded-0" style="height:100%;">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_02.PNG" class="card-img rounded-0" height="275px">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div>                         
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_03.PNG" class="card-img rounded-0" style="height:275px;">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_04.PNG" class="card-img rounded-0" style="height:100%;">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_05.PNG" class="card-img rounded-0" style="height:100%;">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="col-md-4 pt-3">
+                                            <div class="card border-0 rounded-0" style="height:300px;">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsObras/Obra_06.PNG" class="card-img rounded-0" style="height:100%;">
+                                                <div class="text-center">
+                                                    <a class="text-decoration-none fw-light" href="#">Título de la obra</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        <!--FIN SEC4_SUBSEC3 MIS OBRAS-->
+        
+                        <!--SEC4_SUBSEC4 MI CUENTA-->
+                            <div class="container-fluid pt-5" id="sec4subsec3cuenta">
+                                <h2 class="text-center text-uppercase fs-1">Mi cuenta</h2>
+                                <h5 class="text-center text-muted text-uppercase fw-light fs-6">Información de mi cuenta</h5>
+        
+                                <div class="container pt-3 pb-4">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4">
+                                            <div class="card rounded-0 border-1 text-center d-none d-md-block">
+                                                <img src="https://haidejaquelineaf.github.io/b-artemxv1/Files/img/FotosPerfilU/user.png" class="card-img-top img-fluid rounded-0 size-fotoperfil" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title pb-2">Haide Jaqueline Aguilar Flores</h5>
+                                                    <p class="card-text pt-1"><strong>Total de obras registradas: </strong>12</p>
+                                                    <p class="card-text pt-1"><strong>Total de obras adquiridas: </strong>12</p>
+                                                    <p class="card-text pt-1"><strong>Total de obras vendidas: </strong>6</p>
+                                                    <small class="card-text pt-1 pb-0">Membresía adquirida: <br> PREMIUM 21/07/2021 - 22/10/2022</small>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3  d-block d-md-none text-center">
+                                                <div class="row g-0">
+                                                        <div class="col-sm-4">
+                                                            <img src="https://haidejaquelineaf.github.io/b-artemxv1/Files/img/FotosPerfilU/user.png" class="img-fluid rounded-start" alt="...">
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title pb-2">Haide Jaqueline Aguilar Flores</h5>
+                                                                <p class="card-text pt-1"><strong>Total de obras registradas: </strong>12</p>
+                                                                <p class="card-text pt-1"><strong>Total de obras adquiridas: </strong>12</p>
+                                                                <p class="card-text pt-1 pb-0">Membresía adquirida: <br> oro 21/07/2021 - 22/10/2022</p>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8">
+                                            <div class="card text-center rounded-0 border-1">
+                                                <div class="card-header bg-negro rounded-0">
+                                                    <ul class="nav nav-tabs card-header-tabs navmenu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active rounded-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mi información</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Membresía</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link disabled rounded-0" href="#" tabindex="-1" aria-disabled="true">Otra información</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body" style="max-height: 450px;overflow-y: auto;">
+                                                    <div class="tab-content" id="nav-tabContent">
+                                                        <div class="tab-pane fade show active pt-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                            <form class="row g-3 needs-validation text-start align-items-center" novalidate>
+                                                                
+                                                                <div class="col-md-6">
+                                                                    <div class="row gy-5">
+                                                                        <div class="col-md-12 col-sm-6">
+                                                                            <p class="text-center"><strong>Email:</strong> haide.aguilar14@gmail.com</p>
+                                                                        </div>
+                                                                        <div class="col-md-12 col-sm-6">
+                                                                            <div class="row align-items-center">
+                                                                                <div class="col-sm-6">
+                                                                                    <p class="pt-2 text-center"><strong>Cambiar contraseña</strong></p>
+                                                                                </div>
+                                                                                <div class="col-sm-6 d-flex justify-content-center">
+                                                                                    <button class="btn btn-dark rounded-0">Cambiar</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 d-flex justify-content-center">
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input bg-dark border-0" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                                <label class="form-check-label" for="flexSwitchCheckChecked">Mostrar mi información</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div class="col-md-6 pt-sm-0 pt-5">
+                                                                                <div class="form-group">
+                                                                                    <label class="labelcasillaformulario"><strong>Foto de perfil</strong></label>
+                                                                                    <div class="card rounded-0 " style="height:250px;">
+                                                                                        <div class="card-body">
+                                                                                            <label for="fotoperfil"  id="foto-perfil" class="btn btn-outline-dark rounded-0"><i class="bi bi-image"></i></button></label>
+                                                                                            <span id="icon-cerrar"></span>
+                                                                                            <input id="fotoperfil" class="d-none" type="file" name="fotoperfil">
+                                                                                            <img class="img-thumbnail" id="fotoperfil-preview" style="max-height: 200px;">
+                                                                                        </div>
+                                                                                    </div>                    
+                                                                                </div>
+                                                                </div>
+                                                            
+                                                            </form>
+                                                            <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                                                                <button class="btn btn-dark rounded-0" type="button" onclick="guardarCambiosPerfil()">Guardar cambios</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                            <div class="container bg-light pb-5">
+                                                                <h4 class="pt-5">ADQUIRIR MEMBRESÍA</h4>
+                                                                <p>Actualmente no cuentas con un plan de inscripción.</p>
+                                                                <button class="btn btn-dark rounded-0" data-bs-toggle="modal" data-bs-target="#mdlperfilmembresia" data-bs-whatever="@mdo">Adquirir membresía</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--FIN SEC4_SUBSEC4 MI CUENTA-->
+        
+                    </div>
+                </div>
+            </div>
+        <!--FIN PERFIL ARTISTA-->
+               
+                <!------------------------------------------------------------------------ MODAL --------------------------------------------------------------------->
+        <!---MODAL ESTUDIOS-->
+        <div class="modal fade" id="mdlperfilestudios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Formación académica</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-6">
+                                <label for="validationDefault03" class="form-label">Institución educativa</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ffin_estudios_perfil" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault04" class="form-label">Nivel de estudios</label>
+                                <select class="form-select rounded-0" id="validationDefault04" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Licenciatura</option>
+                                    <option>Maestría</option>
+                                    <option>Doctorado</option>
+                                    <option>Postoctorado</option>
+                                    <option value="">Residencias artísticas</option>
+                                    <option value="">Investigación y academia</option>
+                                </select>
+                            </div>
+                            <div class="col-md-9">
+                                <label for="nomtitulo_obtenido" class="form-label">Título</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulo_obtenido" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que acredite sus estudios</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL ESTUDIOS-->
+
+    <!---MODAL CURSOS-->
+        <div class="modal fade" id="mdlperfilcursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Cursos extracurriculares</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-6">
+                                <label for="institucion_cursos_perfil" class="form-label">Institución educativa</label>
+                                <input type="text" class="form-control rounded-0" id="institucion_cursos_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="finicio_curso_perfil" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="finicio_curso_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ffin_curso_perfil" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_curso_perfil" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="nomcurso_perfil" class="form-label">Nombre del curso</label>
+                                <input type="text" class="form-control rounded-0" id="nomcurso_perfil" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="docacreditacion_curso_perfil" class="form-label">Documento de acreditación</label>
+                                <input type="file" class="form-control rounded-0" id="docacreditacion_curso_perfil" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="descripcion_curso_perfil" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="descripcion_curso_perfil" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL CURSOS-->
+
+    <!---MODAL EXPERIENCIA-->
+        <div class="modal fade" id="mdlperfilexperiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content border-0 rounded-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Experiencia profesional</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-8">
+                                <label for="cargo_experiencia_perfil" class="form-label">Cargo</label>
+                                <input type="text" class="form-control rounded-0" id="cargo_experiencia_perfil" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="tipoempleo_experiencia_perfil" class="form-label">Tipo de empleo</label>
+                                <select class="form-select rounded-0" id="tipoempleo_experiencia_perfil" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Jornada completa</option>
+                                    <option>Jornada parcial</option>
+                                    <option>Autónomo</option>
+                                    <option>Profesional independiente</option>
+                                    <option>Contrato temporal</option>
+                                    <option>Contrato de prácticas</option>
+                                    <option>Contrato de formación</option>
+                                    <option>Temporal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                    <label for="validationDefault05" class="form-label">Actualmente tienes este cargo</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Sí</label>
+                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ffin_estudios_perfil" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationDefault04" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="nomempresa" class="form-label">Nombre de la empresa</label>
+                                <input type="text" class="form-control rounded-0" id="nomempresa" value="" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ubicacionempresa" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacionempresa" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que acredite esta información</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción del empleo</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL EXPERIENCIA-->
+
+    <!---MODAL PREMIOS-->
+        <div class="modal fade" id="mdlperfilpremios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Premios recibidos</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Institución que lo otorga</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ubicacioninstitucion" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacioninstitucion" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de expedición</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <label for="nomtitulocurso" class="form-label">Título</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulocurso" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL PREMIOS-->
+
+    <!---MODAL EXPOSICIONES-->
+        <div class="modal fade" id="mdlperfilexposiciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Exposiciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Nombre de la organización</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ubicacionorganizacion" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacionorganizacion" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de exposición</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <label for="nomtituloexposicion" class="form-label">Título de la exposición</label>
+                                <input type="text" class="form-control rounded-0" id="nomtituloexposicion" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label">Exposición</label>
+                                <select class="form-select rounded-0" id="validationDefault04" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Individual</option>
+                                    <option>Colectiva</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL EXPOSICIONES-->
+
+    <!---MODAL PUBLICACIONES-->
+        <div class="modal fade" id="mdlperfilpublicaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Publicaciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Revista/Artículo/Organización</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" placeholder="Dpto. Cultura" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de publicación</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <label for="nomtitulopublicacion" class="form-label">Título de la publicación</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulopublicacion" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label">Redactor/Autor de la publicación</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault04" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL PUBLICACIONES-->
+
+    <!---MODAL MEMBRESÍA-->
+        <div class="modal fade" id="mdlperfilmembresia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Adquirir membresía semestral</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <h5 class="fs-1 text-end"><ion-icon name="help-circle-sharp" onclick="mdlDudasPlanPagos();"></ion-icon></h5>
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-lg-4 g-2 g-lg-3">
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 text-center bg-secondary text-uppercase text-light">básico <br> $10.00</h2>
+                                            <p style="text-align: justify;">Posibilidad de acceder al sistema como usuario artista, tenedor y vendedor. <br> Además, otros beneficios como el acceso a:</p>
+                                            <ul>
+                                                <li>Galería completa</li>
+                                                <li>Publicar obras en galería</li>
+                                                <li>Ficha técnica</li>
+                                                <li>Concurso</li>
+                                                <li>Catálogos</li>
+                                                <li>Solicitar certificado de precio-salida</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-1 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-secondary rounded-0" role="button" id="1">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 bg-dark text-light text-center text-uppercase">Profesional <br> $30.00</h2>
+                                            <p style="text-align: justify;" class="px-3">Posibilidad de acceder al sistema como usuario artista, tenedor, vendedor y subastador.<br> Además, otros beneficios como el acceso a:</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-dark rounded-0" role="button" id="2">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 bg-primary text-light text-center text-uppercase">Premium <br> $60.00</h2>
+                                            <p style="text-align: justify;" class="px-3">Posibilidad de acceder al sistema como usuario tipo artista, vendedor, subastador e inversionista.<br> Además, otros beneficios:</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-primary rounded-0" role="button" id="3">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary border-0 rounded-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark border-0 rounded-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL MEMBRESÍA-->
+
+
+    <!---JS------->
+        <!--JS-->
+            <script>
+                var altura = document.getElementById('menu').offsetHeight;
+                var total = window.innerHeight;
+                var resultado = parseInt(total) - parseInt(altura);
+                document.getElementById("contPrincipal").style.height = resultado + "px";
+            </script>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--chart js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        
+        <!--SweetAlert2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!--FALTA AGREGAR LAS LICENCIAS Y DERECHOS DE AUTOR DE LAS HERRAMIENTAS QUE UTILIZAMOS-->
+</body>
+</html>

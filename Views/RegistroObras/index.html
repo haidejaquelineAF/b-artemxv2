@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Obras</title>
+    <link rel="icon" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/LogoCorazon_b-artemx.png">
+    <!--Styles-->
+        <!--bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Icons-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--DataTables-->
+            <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css">
+        <!--Multi-select-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/css/multi-select-tag.css">
+        <!--Mis Styles-->
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleGeneral/StyleGeneral.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleMenu/StyleMenuPrincipalNegro.css">
+    <!--JQuery-->
+        <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/Tools/Jquery/jquery.min.js"></script>
+
+        <style>
+            ::after,
+            ::before {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                min-width: 260px !important; max-width: 100vw !important;
+            }
+        </style>
+    
+
+</head>
+<body>
+
+    <!--MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+        <div class="container-fluid bg-menuPrincipal px-0" id="menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-block d-sm-none text-center pt-sm-1 pt-3">
+                        <a class="text-decoration-none text-white fs-5" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                            <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-transparent">
+
+                    <button type="button" class="navbar-toggler border-0 ps-4 size-iconmenu" data-bs-toggle="offcanvas"  data-bs-target="#menubam6">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="text-decoration-none fs-4 ps-2 d-none d-sm-block" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                        <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                    </a>
+                    <div class="container d-flex justify-content-end col">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn p-0"><i class="bi bi-bell fs-5 px-1 text-white"></i></button>
+                            <button type="button" class="btn p-0"><i class="bi bi-cart2 text-white fs-5 px-1"></i></button>
+                            <button type="button" class="btn p-0"><img class="size-iconsmenu"src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_languageFFFFFF.png"></button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-user">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end rounded-0 size-dropdownuser" aria-labelledby="btnGroupDrop1">
+                                    <li class="px-2 row d-flex align-items-center">
+                                        <div class="col-3">
+                                            <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-userdrop">
+                                        </div>
+                                        <div class="col-9 pt-1">
+                                            <p class="fw-bold pt-1">Artista/Tenedor
+                                            <small class="fw-light pt-2">haide.aguilar14@gmail.com</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/"><i class="bi bi-person-circle fs-5 text-secondary pe-3"></i>Mi cuenta</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-bell-fill fs-5 text-secondary pe-3"></i>Notificaciones</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-gear-fill fs-5 text-secondary pe-3"></i>Configuración</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-headset fs-5 text-secondary pe-3"></i>Ayuda y soporte</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-book-fill fs-5 text-secondary pe-3"></i>Política de privacidad</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/"><i class="bi bi-power fs-5 text-secondary pe-3"></i>Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="offcanvas offcanvas-start bg-white contentmenulat" id="menubam6" tabindex="-1">
+                        <div class="offcanvas-header pb-0 pt-2 pb-2 rounded-0 bg-menuPrincipal">
+                            <a class="text-decoration-none fs-5 text-center" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                                <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                            </a>
+                            <button  type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                            <ul class="navbar-nav justify-content-evenly pt-3">
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio" class="nav-link">
+                                        <i class="bi bi-house-door-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Inicio</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-people-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Conócenos</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Quiénes somos</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Filosofía</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Contacto</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-building-fill-lock fs-5 text-secondary"></i>
+                                        <strong class="ps-1 fw-light">Mercado del arte</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="http://192.168.1.78/Galeria/index.php">Galería</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/RegistroObras">Registro obras</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Valuación de obras</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Artistas</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Subasta</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">ARTCOIN</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Lotería</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-mortarboard-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Académico</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Innovación y desarrollo</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Universidad</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Catálogos</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Publicaciones</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/RConcurso/" class="nav-link ">
+                                        <i class="bi bi-trophy-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Concurso</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-inboxes-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Servicios</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Transporte</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Seguro</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Embalaje</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/">Avalúo</a></li>
+                                    </ul>
+                                </li>                             
+                            </ul>
+                        </div>
+                        <div class="pb-3 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/profile.php?id=61557621746159" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_facebook.png" width="20">
+                            </a>
+                            <a href="https://www.instagram.com/bolsaartemx_oficial/" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_instagram.png" width="15">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC0vpIwyHVp3NGFfJir7KivA" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_youtube.png" width="20">
+                            </a>
+                            <a href="https://twitter.com/Bolsaartemx" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_tiktok.png" width="15">
+                            </a>
+                            <a href="https://www.tiktok.com/@bolsaartemx?_t=8lRiyMfUAjO&_r=1" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_linkedin.png" width="20">
+                            </a>
+                        </div>
+                    </section>
+
+            </div>
+                    
+        </div>            
+    <!--FIN MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+
+        <style>
+            .text-gris{
+                color: #d4d2d2 !important;
+                text-align: justify;
+            }
+            .form-select:focus, .form-control:focus, .btn:focus{
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            .conttablesft{
+                background: #f5f5f5;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3) !important;
+            }
+            .icons-fichat{
+                height:25px;
+            }
+            .contsec{
+                max-height:530px;
+                overflow-y: auto;
+            }
+            .size-fotoObra{
+                width: max-content;
+                height: auto;
+                max-height: 200px;
+            }
+            #contimg{
+                min-height:140px;
+            }
+            #nacionalidad_autor{
+                font-size: 10px !important;
+                height: 38px;
+            }
+        </style>
+        <!--Tabla de las solicitudes de Ficha técnica-->
+        <div class="overflow-hidden px-0" id="contPrincipal">
+            <div class="container-fluid pb-5 px-0 contsec">
+                <h6 class="pt-5 text-secondary fw-light text-uppercase text-center">Registro DE OBRA</h6>
+                <h2 class="text-center fw-light">FICHA TÉCNICA DE LA OBRA</h2>
+                <hr class="mx-5 mt-0">
+                <button class="btn btn-lg btn-primary rounded-0 fw-light px-5 ms-4 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#mdlPreguntarAutor" data-bs-whatever="@mdo">Agregar obra</button>
+
+                <div class="container-fluid pb-5">
+                        <div class="card-body table-responsive conttablesft">
+                            <table id="tablaSFT" class="table table-striped display" style="width:100%;">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th class="fw-light text-start">Obra</th>
+                                        <th class="fw-light">Título</th>
+                                        <th class="fw-light">Autor</th>
+                                        <th class="fw-light">Año</th>
+                                        <th class="fw-light">Fecha de solicitud</th>
+                                        <th class="fw-light">Estado/Estatus</th>
+                                        <th class="fw-light" style="width:200px;">Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img class="img-thumbnail mx-auto d-block" src="https://haidejaquelineaf.github.io/b-artemxv1/Files/img/FotosObrasFT/ejemplo.jpg" style="max-height:80px; max-width:100px;"></td>
+                                        <td>Diferencia y continuidad</td>
+                                        <td>Manuel Felguerez</td>
+                                        <td>1982</td>
+                                        <td>2024-07-24</td>
+                                        <td><span class="badge bg-success">Aprobado</span></td>
+                                        <td><button class="btn btn-success" onclick="alerta(event);"><i class="bi bi-send-fill"></i></button>
+                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mdlVerFichaTecnica"><i class="bi bi-eye"></i></button>
+                                            <button class="btn btn-dark" onclick="alerta(event);"><i class="bi bi-download"></i></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="table-dark">
+                                    <tr>
+                                        <th class="fw-light text-start">Obra</th>
+                                        <th class="fw-light">Título</th>
+                                        <th class="fw-light">Autor</th>
+                                        <th class="fw-light">Año</th>
+                                        <th class="fw-light">Fecha de la solicitud</th>
+                                        <th class="fw-light">Estado/Estatus</th>
+                                        <th class="fw-light">Acción</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+            
+        <!--Fin sec. de la tabla de las solicitudes de la ficha técnica-->
+
+
+      <!-----------------------------------------------------MODALES----------------------------------------------->
+                
+                    <!--MODAL SELECCIONAR AUTOR-->
+                        <div class="modal fade" id="mdlPreguntarAutor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content rounded-0 border-0">
+                                    <div class="modal-header bg-dark rounded-0">
+                                        <h5 class="modal-title text-light fw-light text-uppercase" id="modal_titulo_registro">ficha técnica</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    
+                                    <div class="modal-body pt-4">
+                                                <h3 class="text-uppercase">Información del autor</h3>
+
+                                                 <div class="row text-center pt-4 d-flex justify-content-center">
+                                                    <div class="col-sm-4">
+                                                        <p class="pt-2">Seleccionar al autor de la obra:</p>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <button class="btn btn-primary w-75 rounded-0" type="button" data-bs-target="#mdlSoliFichaTecnica" data-bs-toggle="modal">Yo soy el autor</button>
+                                                    </div>
+                                                    <div class="col-sm-4 mt-sm-0 mt-2">
+                                                    <button class="btn btn-dark rounded-0 fw-light w-75" type="button" data-bs-target="#mdlAgregarAutor" data-bs-toggle="modal" data-bs-dismiss="modal">Agregar autor</button>
+                                                    </div>
+                                                </div>
+                    
+                                                <hr>
+                                                <div class="container-fluid">
+                                                    <div class="card-body table-responsive conttablesft">
+                                                        <table id="tablaSAO"class="table table-striped display" style="width: 100%;">
+                                                                <thead class="table-dark">
+                                                                    <tr>
+                                                                        <th class="fw-light">Nombre</th>
+                                                                        <th class="fw-light">Nacionalidad</th>
+                                                                        <th class="fw-light text-start">Nacimiento</th>
+                                                                        <th class="fw-light">Obra</th>
+                                                                        <th class="fw-light">Acción</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Manuel Felguerez</td>
+                                                                        <td>México</td>
+                                                                        <td>1928</td>
+                                                                        <td>"Mientras muere la tarde", 2015</td>
+                                                                        <td><button class="btn btn-success" data-bs-target="#mdlSoliFichaTecnica" data-bs-toggle="modal"><i class="bi bi-check2"></i></button>
+                                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mdlVisualizarIA"><i class="bi bi-eye"></i></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tfoot class="table-dark">
+                                                                    <tr>
+                                                                        <th class="fw-light">Nombre</th>
+                                                                        <th class="fw-light">Nacionalidad</th>
+                                                                        <th class="fw-light text-start">Nacimiento</th>
+                                                                        <th class="fw-light">Obra</th>
+                                                                        <th class="fw-light">Acción</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                                
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button  type="submit" class="btn btn-secondary px-5 rounded-0"  data-bs-dismiss="modal">Regresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--FIN MODAL SELECCIONAR AUTOR--> 
+
+                    <!--MODAL Solicitar Ficha Técnica-->
+                        <div class="modal fade" id="mdlSoliFichaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content rounded-0 border-0">
+                                    <div class="modal-header bg-dark rounded-0">
+                                        <h5 class="modal-title text-light fw-light text-uppercase" id="modal_titulo_registro">ficha técnica</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <!--<h5 class="fs-1  text-center p-3">Información de la obra</h5>-->
+                                    <div class="modal-body pt-4">
+                                        <form class="row g-3 d-flex justify-content-center" method="post" id="frmSlFichaTecnica">
+
+                                            <div class="col-md-8">
+                                                <input type="hidden" class="form-control" id="idUser" name="idUser" value="1">
+                                                <input type="hidden" class="form-control" id="idAutor" name="idAutor" value="1">
+                                                <input type="hidden" class="form-control" id="fsolicitud_ficha" name="fsolicitud_ficha" value="1">
+
+                                                <label for="titulo_obra" class="form-label">Título de la obra <strong class="text-danger">*</strong></label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="titulo_obra" name="titulo_obra" maxlength="40">
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label for="serie_obra" class="form-label">Serie</label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="serie_obra" name="serie_obra" maxlength="30" placeholder="Ej. 124/250"> 
+                                                <div class="invalid-feedback" id="alertaSer"></div>  
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label for="originalidad_obra" class="form-label">Originalidad <strong class="text-danger">*</strong></label>
+                                                <select class="form-select rounded-0 text-secondary" id='originalidad_obra' name='originalidad_obra'  required>                                
+                                                    <option selected disabled value=""></option>
+                                                    <option>Original</option>
+                                                    <option>Copia</option>
+                                                    <option>Réplica</option>
+                                                </select>     
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label for="orientacion_obra" class="form-label ">Orientación <strong class="text-danger">*</strong></label>
+                                                <select class="form-select rounded-0 text-secondary" id='orientacion_obra' name='orientacion_obra'  required>                                
+                                                    <option selected disabled value=""></option>
+                                                    <option>Vertical</option>
+                                                    <option>Horizontal</option>
+                                                </select>   
+                                                <div class="invalid-feedback"></div>   
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label for="enmarcado_obra" class="form-label ">Enmarcado <strong class="text-danger">*</strong></label>
+                                                <select class="form-select rounded-0 text-secondary" id='enmarcado_obra' name='enmarcado_obra'  required>                                
+                                                    <option selected disabled value=""></option>
+                                                    <option>Sí</option>
+                                                    <option>No</option>
+                                                </select>  
+                                                <div class="invalid-feedback"></div>   
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col-10">
+                                                        <label for="peso_obra" class="form-label">Peso <strong class="text-danger">*</strong></label>
+                                                        <input type="text" class="form-control rounded-0 text-secondary" id="peso_obra" name="peso_obra" placeholder="">  
+                                                        <div class="invalid-feedback" id="alertaPeso"></div> 
+                                                    </div>
+                                                    <div class="col-2 text-start px-0 pt-4">
+                                                        g
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label ">Dimensiones <strong class="text-danger">*</strong></label>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control rounded-0 text-secondary" id="dimAlto_obra" name="dimAlto_obra" placeholder="Alto" >
+                                                                <div class="invalid-feedback" id="alertaDAl"></div>
+                                                            </div>
+                                                            <div class="col-2 text-start px-0">
+                                                                cm
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="col-sm-4"> 
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control rounded-0 text-secondary" id="dimLargo_obra" name="dimLargo_obra" placeholder="Largo">
+                                                                <div class="invalid-feedback" id="alertaDlg"></div> 
+                                                            </div>
+                                                            <div class="col-2 text-start px-0">
+                                                                cm
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <div class="row d-flex align-items-center">
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control rounded-0 text-secondary" id="dimAncho_obra" name="dimAncho_obra" placeholder="Ancho">
+                                                                <div class="invalid-feedback" id="alertaDAn"></div>
+                                                            </div>
+                                                            <div class="col-2 text-start px-0">
+                                                                cm
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+
+                                                </div> 
+                                            </div>
+
+                                            <div class="col-md-6 ">
+                                                <label for="categoria_obra" class="form-label ">Categoría <strong class="text-danger">*</strong></label>
+                                                <select id="categoria_obra" class="form-select rounded-0 text-secondary" name="categoria_obra">
+                                                    <option selected disabled value=""></option>    
+                                                    
+                                                        <option value="1">Pintura</option>
+                                                        <option value="2">Grabado</option>
+                                                        <option value="3">Escultura</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6 text-secondary">
+                                                <label for="tecnica_obra" class="text-dark pb-1">Técnica <strong class="text-danger">*</strong></label>
+                                                <input type="hidden" class="form-control" id="tecnicaa_obra" name="tecnicaa_obra">
+                                                <input type="hidden" class="form-control" id="tecnica1_obra" name="tecnica1_obra">
+                                                <input type="hidden" class="form-control" id="tecnica2_obra" name="tecnica2_obra">
+                                                <input type="hidden" class="form-control" id="tecnica3_obra" name="tecnica3_obra">
+                                                <select id="tecnica_obra" name="tecnica_obra" multiple >
+                                                    <option value="1">Carboncillo</option>
+                                                    <option value="2">Grafito</option>
+                                                    <option value="3">Sanguina</option>
+                                                    <option value="4">Lápices de colores</option>
+                                                    <option value="5">Tinta</option>
+                                                    <option value="6">Tiza</option>
+                                                </select>
+                                                <div class="invalid-feedback" id="alertaTnc"></div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="materiales_obra" class="form-label ">Materiales <strong class="text-danger">*</strong></label>
+                                                <textarea class="form-control rounded-0 text-secondary" aria-label="With textarea" id='materiales_obra' name='materiales_obra' maxlength="100"></textarea>  
+                                                <div class="invalid-feedback"></div>    
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <label for="descripcion_obra" class="form-label ">Descripción de la obra <strong class="text-danger">*</strong></label>
+                                                <textarea class="form-control rounded-0 text-secondary" aria-label="With textarea" id='descripcion_obra' name='descripcion_obra' placeholder="No más de 100 caracteres" maxlength="100"></textarea>
+                                                <div class="invalid-feedback"></div>   
+                                            </div>
+
+                                            <div class="col-12 ">
+                                                <label for="descripcion_tecnica_obra" class="form-label ">Descripción de la técnica <strong class="text-danger">*</strong></label>
+                                                <textarea class="form-control rounded-0 text-secondary" aria-label="With textarea" id='descripcion_tecnica_obra' name='descripcion_tecnica_obra' placeholder="No más de 100 caracteres" maxlength="100"></textarea>
+                                                <div class="invalid-feedback"></div>   
+                                            </div>
+
+                                            <div class="col-md-6 ">
+                                                <label for="estilo_obra" class="form-label ">Estilo de la obra <strong class="text-danger">*</strong></label>
+                                                <select id="estilo_obra" class="form-select rounded-0 text-secondary" name="estilo_obra">
+                                                    <option selected disabled value=""></option>    
+                                                        <option value="1">Abstracto</option>
+                                                        <option value="2">Figurativo</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6 ">
+                                                <label for="tema_obra" class="form-label ">Tema de la obra <strong class="text-danger">*</strong></label>
+                                                <select id="tema_obra" class="form-select rounded-0 text-secondary" name="tema_obra">
+                                                    <option selected disabled value=""></option>    
+                                                            <option value="1">Político</option>
+                                                            <option value="2">Naturaleza</option>
+                                                            <option value="3">Naturaleza muerta</option>
+                                                            <option value="4">Psicología</option>
+                                                            <option value="5">Filosofía</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6 text-secondary">
+                                                <label for="colores_obra" class="text-dark pb-1">Colores <strong class="text-danger">*</strong></label>
+                                                <input type="hidden" class="form-control" id="coloress_obra" name="coloress_obra">
+                                                <select id="colores_obra" name="colores_obra" multiple >
+                                                    <option value="1">Sepia</option>
+                                                    <option value="2">Azul</option>
+                                                    <option value="3">Amarillo</option>
+                                                    <option value="4">Rojo</option>
+                                                    <option value="5">Verde</option>
+                                                </select>
+                                                <div class="invalid-feedback" id="alertaCol"></div>
+                                            </div>
+
+                                            <div class="col-md-6 ">
+                                                <label for="fejecucion_obra" class="form-label ">Año de ejecución <strong class="text-danger">*</strong></label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="fejecucion_obra" name="fejecucion_obra">
+                                                <div class="invalid-feedback" id="alertafe"></div> 
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="col-sm-6">
+                                                <div class="from-group">
+                                                    <span>Imagen de la obra <strong class="text-danger">*</strong></span>
+                                                    <div class="card rounded-0 px-sm-0 px-2" id="contimg">
+                                                        <div class="card-body mx-sm-2 mx-auto pt-2 px-sm-0">
+                                                            <label for="imagenObra"  id="icon-image" class="btn btn-dark rounded-0"><i class="bi bi-image"></i></label>
+                                                            <span id="icon-cerrar"></span>
+                                                            <br>
+                                                            <input id="imagenObra" class="d-none" type="file" name="imagenObra" onchange="previewObra(event);">
+                                                            <img class="img-fluid size-fotoObra mx-auto d-block pt-1 px-sm-2" id="imgObra-preview">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+
+                                            <div class="col-sm-6">
+                                                <div class="row gy-sm-3">
+                                                    <div class="col-12">
+                                                        <label for="certificaciones_autenticidad_obra" class="form-label ">Certificación de autenticidad  <strong class="text-danger">*</strong></label>
+                                                        <input class="form-control rounded-0" type="file" id="certificaciones_autenticidad_obra" name="certificaciones_autenticidad_obra" accept="application/pdf">
+                                                        <div class="invalid-feedback" id="alertaCer"></div> 
+                                                    </div>
+                                                    <div class="col-12 pt-sm-0 pt-2">
+                                                        <label for="factura_fiscal_obra" class="form-label ">Factura fiscal de la obra  <strong class="text-danger">*</strong></label>
+                                                        <input class="form-control rounded-0" type="file" id="factura_fiscal_obra" name="factura_fiscal_obra" accept="application/pdf">
+                                                        <div class="invalid-feedback" id="alertaFac"></div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        
+                                            <div class="d-grid gap-2 col-sm-6 mx-auto">
+                                                <button class="btn btn-dark rounded-0" type="submit" onclick="solicitudFichaT(event);">Enviar solicitud</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer pt-1 pb-1">
+                                        <button class="btn btn-secondary border-0 rounded-0 px-4" data-bs-dismiss="modal">Regresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--FIN MODAL VISUALIZAR REGISTRO--> 
+
+                    <!--MODAL VER INFORMACIÓN DE LA OBRA-->
+                        <div class="modal fade" id="mdlVerFichaTecnica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content rounded-0 border-0">
+                                    <div class="modal-header bg-dark rounded-0">
+                                        <h5 class="modal-title text-light fw-light text-uppercase" id="modal_titulo_registro">INFORMACIÓN DE LA OBRA</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body pt-4 fw-light">
+                                        <div class="row g-3 d-flex justify-content-center mx-sm-3">
+
+                                            <div class="col-md-7">
+                                                <img class="img-thumbnail mx-auto d-block" id="imagen_obrav" src="https://haidejaquelineaf.github.io/b-artemxv1/Files/img/FotosObrasFT/ejemplo.jpg" alt="" style="max-height: 200px;">
+                                            </div>
+                                            <div class="col-md-5 text-start">
+                                                <div class="row d-flex gy-3">
+                                                    <div class="col-12 d-flex">
+                                                        Título: <div class="text-secondary px-2" id="titulo_obrav">Diferencia y continuidad</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Autor: <div class="text-secondary px-2" id="autor_obrav">Manuel Felguerez. <br>
+                                                            Juan García Ponce.</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Serie: <div class="text-secondary px-2" id="serie_obrav">Colección Tezontle.
+                                                            ISBN 968-16/7665-3 (Encuadernada)</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Año: <div class="text-secondary px-2" id="fejecucion_obrav">1982</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Categoría: <div class="text-secondary px-2" id="categoria_obrav">Grabado</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12 d-flex">
+                                                Descripción:
+                                                <div id="descripcion_obrav" class="text-secondary px-2">Parte de la serie de 24 serigrafías contenidas en una carpeta resultado de investigación de Manuel Felguerez y Juan García Ponce.</div>
+                                            </div>
+                                            <div class="col-12 d-flex">
+                                                Ténica(s): 
+                                                <div id="tecnicas_obrav" class="text-secondary px-2">Serigrafía.</div>
+                                                <div id="desctecnica_obrav" class="text-secondary">Ideogramas digitales abstractos compuestos de aforismos de Juan García Ponce y serigrafías de Manuel Felguerez.</div>
+                                            </div>
+                                            <div class="col-12 d-flex">
+                                                Materiales:
+                                                <div id="materiales_obrav" class="text-secondary px-2">Papel vegetal de 110 gramos, papel Súper Alfa Guarro de 250 gramos a 8 tintas.</div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <strong>Otros detalles de la obra:</strong> 
+                                                <div class="row">
+                                                    <div class="col-sm-6 pt-3">
+                                                        <div class="row fw-light">
+                                                            <div class="col-12 d-flex">
+                                                                Dimensiones:
+                                                                <div id="dimAlto_obrav" class="text-secondary px-1">34</div>
+                                                                <div id="dimLargo_obrav" class="text-secondary">x 46</div>
+                                                                <div id="dimAncho_obrav" class="text-secondary px-1"></div> cm
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Peso:
+                                                                <div id="peso_obrav" class="text-secondary px-1">NA</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Estilo:
+                                                                <div id="estilo_obrav" class="text-secondary px-1">Abstracto</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Tema:
+                                                                <div id="tema_obrav" class="text-secondary px-1">Otros</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Colores:
+                                                                <div id="colores_obrav" class="text-secondary px-1">Café, morado</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Originalidad:
+                                                                <div id="originalidad_obrav" class="text-secondary px-1">Originalidad</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Orientación:
+                                                                <div id="orientacion_obrav" class="text-secondary px-1">Horizontal</div>
+                                                            </div>
+                                                            <div class="col-12 d-flex">
+                                                                Enmarcado:
+                                                                <div id="enmarcado_obrav" class="text-secondary px-1">No</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="row pt-4">
+                                                            <div class="col-12 d-flex justify-content-end align-items-center">
+                                                                Certificado de autenticidad 
+                                                                <button class="btn btn-dark rounded-0 ms-2" id="certificado_autenticidad_obrav" disabled><i class="bi bi-eye"></i></button>
+                                                            </div>
+                                                            <div class="col-12 d-flex justify-content-end align-items-center pt-3">
+                                                                Factura fiscal de la obra
+                                                                <button class="btn btn-dark rounded-0 ms-2" id="factura_fiscal_obrav"disabled><i class="bi bi-eye"></i></button>
+                                                            </div>
+                                                            <div class="col-12 d-flex justify-content-end align-items-center pt-3">
+                                                                Información del autor
+                                                                <button class="btn btn-dark rounded-0 ms-2" id="infautor_obrav"disabled><i class="bi bi-eye"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer pt-1 pb-1">
+                                        <button class="btn btn-secondary border-0 rounded-0 px-4" data-bs-dismiss="modal">Regresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--FIN MODAL PARA VER INFORMACIÓN DE LA OBRA-->
+
+                    <!--MODAL AGREGAR AUTOR-->
+                        <div class="modal fade" id="mdlAgregarAutor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content rounded-0 border-0">
+                                    <div class="modal-header bg-dark rounded-0">
+                                        <h5 class="modal-title text-light fw-light text-uppercase" id="modal_titulo_registro">Agregar autor</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    
+                                    <div class="modal-body pt-4">
+                                        <form class="row g-3 d-flex justify-content-center align-items-center" method="post" id="frmAgregarAutorFichaTecnica">
+                                            <div class="col-md-8">
+                                                <input type="hidden" class="form-control" id="idUsuario" name="idUsuario" value="1">
+                                                <label for="nombre_autor" class="form-label">Nombre del autor <strong class="text-danger">*</strong></label>
+                                                <input type="text" class="form-control rounded-0 text-secondary text-uppercase" id="nombre_autor" name="nombre_autor">
+                                                <div class="invalid-feedback" id="alertanna"></div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="nacionalidad_autor" class="form-label">Nacionalidad (País) <strong class="text-danger">*</strong></label>
+                                                <input type="hidden" class="form-control rounded-0 text-secondary" id="nacionalidadd_autor" name="nacionalidadd_autor">
+                                                <select size="1" class="form-select country text-uppercase rounded-0" aria-label="Default select example" id="nacionalidad_autor" name="">
+                                                    <option selected></option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="nacimiento_autor" class="form-label">Año de nacimiento<strong class="text-danger">*</strong></label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="nacimiento_autor" name="nacimiento_autor">
+                                                <div class="invalid-feedback" id="alertaffn"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="deceso_autor" class="form-label">Año de deceso</label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="deceso_autor" name="deceso_autor">
+                                                <div class="invalid-feedback" id="alertaffd"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="obra_representativa_autor" class="form-label">Obra más representativa <strong class="text-danger">*</strong></label>
+                                                <input type="text" class="form-control rounded-0 text-secondary" id="obra_representativa_autor" name="obra_representativa_autor">
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="descripcion_autor" class="form-label">Descripción del autor y su trabajo <strong class="text-danger">*</strong></label>
+                                                <textarea class="form-control rounded-0 text-secondary" aria-label="With textarea" id='descripcion_autor' name='descripcion_autor' maxlength="200" placeholder="Máximo 100 caracteres"></textarea>  
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary px-5 rounded-0" type="button" onclick="btnAgregarAutor(event);">Agregar</button>
+                                        <button class="btn btn-secondary px-5 rounded-0" data-bs-target="#mdlPreguntarAutor" data-bs-toggle="modal" data-bs-dismiss="modal">Regresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--FIN MODAL AGREGAR AUTOR--> 
+
+                    <!--MODAL PARA VER INFORMACIÓN DEL AUTOR-->
+                        <div class="modal fade" id="mdlVisualizarIA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content rounded-0 border-0 bg-secondary">
+                                    <div class="modal-header bg-dark rounded-0">
+                                        <h5 class="modal-title text-light fw-light text-uppercase" id="modal_titulo_registro">INFORMACIÓN DEL AUTOR</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body pt-4 text-light fw-light">
+                                        <div class="row g-3 d-flex justify-content-center mx-sm-3">
+
+                                            <div class="col-md-5">
+                                                <img class="img-thumbnail mx-auto d-block" id="imagen_obrav" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" alt="" style="max-height: 200px;">
+                                            </div>
+                                            <div class="col-md-7 text-start">
+                                                <div class="row d-flex gy-3">
+                                                    <div class="col-12 d-flex">
+                                                        Nombre: <div class="text-gris px-2" id="nombre_autorv">Manuel Felguerez</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Nacionalidad: <div class="text-gris px-2" id="nacionalidad_autorv">MÉXICO</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Nacimiento: <div class="text-gris px-2" id="nacimiento_autorv">1928</div>
+                                                    </div>
+                                                    <div class="col-12 d-flex">
+                                                        Deceso: <div class="text-gris px-2" id="deceso_autorv">2020</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12 d-flex">
+                                                Obra representativa: <div class="text-gris px-2" id="obra_representativa_autorv">“Mientras muere la tarde”, 2015</div>
+                                            </div>
+                                            <div class="col-12 d-flex">
+                                                Descripción:
+                                                <div id="descripcion_autorv" class="text-gris px-2">Fue uno de los más importantes artistas mexicanos, pionero del arte abstracto en nuestro país, y un integrante fundamental de la Generación de la Ruptura.Su trabajo ha sido comparado con Picasso y Ruf</div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer pt-1 pb-1">
+                                        <button class="btn btn-dark border-0 rounded-0 px-4"data-bs-dismiss="modal">Regresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--FIN MODAL PARA VER INFORMACIÓN DEL AUTOR-->
+        <!--------------------------------------------------FIN MODALES------------------------------------------->
+
+    
+     <!---JS------->
+            <!--JS-->
+                <script>
+                    var altura = document.getElementById('menu').offsetHeight;
+                    var total = window.innerHeight;
+                    var resultado = parseInt(total) - parseInt(altura);
+                    //console.log("Altura: "+resultado);
+                    document.getElementById("contPrincipal").style.height = resultado + "px";
+                </script>
+            <!--bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <!--jquery-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <!--DataTables-->
+                <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+                <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+            <!--Multi-select-->
+                <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+            <!--SweetAlert2-->
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                new MultiSelectTag('tecnica_obra');
+                new MultiSelectTag('colores_obra');
+            </script>                                           
+            <!--MIS JS-->
+            <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/js/JS_FichaTecnica/JS_registrarObra_01_12.js"></script>
+
+            <!--FALTA AGREGAR LAS LICENCIAS Y DERECHOS DE AUTOR DE LAS HERRAMIENTAS QUE UTILIZAMOS-->
+</body>
+</html>

@@ -1,0 +1,30 @@
+.size-logo{
+    width: 28vw; min-width: 210px;
+}
+.bg-menuhome{
+    background: rgb(0, 0, 0) !important;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.navbar-nav li a{
+    font-size: calc(.5em + .5vw) !important;
+    font-weight: 600;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a.active{
+    font-weight: 500;
+    border-bottom: 2px solid gray;
+    letter-spacing: 0.03rem;
+}
+.dropdown-menu{
+    box-shadow: 0 0 10px rgba(165, 162, 162, 0.6);
+}
+.dropdown-menu li a{
+    letter-spacing: 0.03rem;
+}
+.dropdown-menu li a:hover{
+    font-weight: 600;
+    color: #696969 !important;
+    background-color: #dfdcdc !important;
+    border-radius: 0%;
+    border:0;
+}

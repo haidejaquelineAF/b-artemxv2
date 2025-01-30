@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link rel="icon" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/LogoCorazon_b-artemx.png">
+    <!--Styles-->
+        <!--bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Icons-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--Mis Styles-->
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleGeneral/StyleGeneral.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StyleMenu/StyleMenuPrincipalNegro.css">
+            <link rel="stylesheet" href="https://haidejaquelineaf.github.io/b-artemxv1/Assets/css/StylePagInicio/StylePagInicio.css">
+    <!--JQuery-->
+        <script src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/Tools/Jquery/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+        <div class="container-fluid bg-menuPrincipal px-0" id="menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-block d-sm-none text-center pt-sm-1 pt-3">
+                        <a class="text-decoration-none text-white fs-5" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                            <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-transparent">
+
+                    <button type="button" class="navbar-toggler border-0 ps-4 size-iconmenu" data-bs-toggle="offcanvas"  data-bs-target="#menubam6">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="text-decoration-none fs-4 ps-2 d-none d-sm-block" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                        <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                    </a>
+                    <div class="container d-flex justify-content-end col">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn p-0"><i class="bi bi-bell fs-5 px-1 text-white"></i></button>
+                            <button type="button" class="btn p-0"><i class="bi bi-cart2 text-white fs-5 px-1"></i></button>
+                            <button type="button" class="btn p-0"><img class="size-iconsmenu"src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_languageFFFFFF.png"></button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-user">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end rounded-0 size-dropdownuser" aria-labelledby="btnGroupDrop1">
+                                    <li class="px-2 row d-flex align-items-center">
+                                        <div class="col-3">
+                                            <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_user.png" class="img-circle elevation-3 rounded-circle size-userdrop">
+                                        </div>
+                                        <div class="col-9 pt-1">
+                                            <p class="fw-bold pt-1">Artista/Tenedor
+                                            <small class="fw-light pt-2">haide.aguilar14@gmail.com</small>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/"><i class="bi bi-person-circle fs-5 pe-3 text-secondary"></i>Mi cuenta</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-bell-fill fs-5 pe-3 text-secondary"></i>Notificaciones</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-gear-fill fs-5 pe-3 text-secondary"></i>Configuración</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-headset fs-5 pe-3 text-secondary"></i>Ayuda y soporte</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/"><i class="bi bi-book-fill fs-5 pe-3 text-secondary"></i>Política de privacidad</a></li>
+                                    <li><a class="dropdown-item d-flex align-items-center fw-light" href="https://haidejaquelineaf.github.io/b-artemxv1/"><i class="bi bi-power fs-5 pe-3 text-secondary"></i>Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="offcanvas offcanvas-start bg-white contentmenulat" id="menubam6" tabindex="-1">
+                        <div class="offcanvas-header pb-0 pt-2 pb-2 rounded-0 bg-menuPrincipal">
+                            <a class="text-decoration-none fs-5 text-center" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio/">
+                                <img class="img-fluid d-inline-block size-logo" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsLogos/logoL_b-artemx_bc85898C.png">
+                            </a>
+                            <button  type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                            <ul class="navbar-nav justify-content-evenly pt-3">
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Inicio" class="nav-link">
+                                        <i class="bi bi-house-door-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Inicio</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="" class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        <i class="bi bi-person-circle fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Cuenta</strong>
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 dropdwnmenu">
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Cuenta/">Cuenta</a></li>
+                                        <li><a class="dropdown-item px-4" href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Perfil/">Perfil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bell-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Notificaciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-handbag-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Mis compras</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-bookmark-heart-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Favoritos</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-credit-card-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Suscripciones</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Historial/" class="nav-link ">
+                                        <i class="bi bi-clock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Historial</strong>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-2 ps-4 position-relative">
+                                    <a href="https://haidejaquelineaf.github.io/b-artemxv1/Views/Construccion/" class="nav-link ">
+                                        <i class="bi bi-lock-fill fs-5 text-secondary"></i>
+                                        <strong class="ps-2 fw-light">Acceso y seguridad</strong>
+                                    </a>
+                                </li>                   
+                            </ul>
+                        </div>
+                        <div class="pb-3 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/profile.php?id=61557621746159" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_facebook.png" width="20">
+                            </a>
+                            <a href="https://www.instagram.com/bolsaartemx_oficial/" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_instagram.png" width="15">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC0vpIwyHVp3NGFfJir7KivA" class="text-decoration-none pe-1">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_youtube.png" width="20">
+                            </a>
+                            <a href="https://twitter.com/Bolsaartemx" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_tiktok.png" width="15">
+                            </a>
+                            <a href="https://www.tiktok.com/@bolsaartemx?_t=8lRiyMfUAjO&_r=1" class="text-decoration-none">
+                                <img class="img-fluid" src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_linkedin.png" width="20">
+                            </a>
+                        </div>
+                    </section>
+
+            </div>
+                    
+        </div>            
+    <!--FIN MENU MAQUETACIÓN 1 NVL OFFCANVAS NEGRO-->
+
+        <!--ACTIVIDAD DEL USUARIO-->
+            <div class="container-fluid px-0 overflow-auto pb-5" id="contPrincipal">
+
+                <div class="container-fluid" id="continfusuarioperfil">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-menusecundarioperfil" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        
+                        <!--SEC4_SUBSEC5 ACTIVIDAD NFT-->
+                            <div class="container-fluid pb-5 pt-5" id="sec4subsec5actividad">
+                                <style>
+                                    .timeline{
+                                        position: relative;
+                                        max-width: max-content;
+                                        margin: 20px auto;
+                                    }
+                                    .contenedoractividades{
+                                        padding: 10px 50px;
+                                        position: relative;
+                                        width: 50%;
+                                        animation: movedown 1s linear forwards;
+                                        opacity: 0;
+                                        z-index: 2;
+                                    }
+                                    @keyframes movedown {
+                                        0%{
+                                            opacity: 1;
+                                            transform: translateY(-30px);
+                                        }
+                                        100%{
+                                            opacity: 1;
+                                            transform: translateY(0px);
+                                        }
+                                    }
+                                    .contenedoractividades:nth-child(1){
+                                        animation-delay: 0s;
+                                    }
+                                    .contenedoractividades:nth-child(2){
+                                        animation-delay: 3s;
+                                    }
+                                    .contenedoractividades:nth-child(3){
+                                        animation-delay: 4s;
+                                    }
+                                    .contenedoractividades:nth-child(4){
+                                        animation-delay: 5s;
+                                    }
+                                    .left-container{
+                                        left: 0;
+                                    }
+                                    .right-container{
+                                        left: 50%;
+                                    }
+                                    .contenedoractividades img{
+                                        position: absolute;
+                                        width: 40px;
+                                        border-radius: 50%;
+                                        right: -20px;
+                                        top: 30px;
+                                        z-index: 100 !important;
+                                    }
+                                    .right-container img{
+                                        left: -20px;
+                                    }
+                                    .timeline::after{
+                                        content: '';
+                                        position: absolute;
+                                        width: 6px;
+                                        height: 100%;
+                                        background: #007bff !important;
+                                        top: 0;
+                                        left: 50%;
+                                        margin-left: -3px;
+                                        z-index: 1 !important;
+                                        animation: moveline 6s linear forwards
+                                    }
+                                    @keyframes moveline {
+                                        0%{
+                                            height: 0;
+                                        }
+                                        100%{
+                                            height: 100%;
+                                        }
+                                    }
+                                    .infoactividad{
+                                        padding: 12px 22px;
+                                        position: relative;
+                                        border-radius: 0%;
+                                    }
+                                    .infoactividad h2{
+                                        font-weight: 600;
+                                        font-size: calc(.8em + .8vw);
+                                    }
+                                    .infoactividad p{
+                                        padding-top: 5px;
+                                        font-size: calc(.5em + .5vw);
+                                        text-align: justify;
+                                        font-weight: lighter;
+                                    }
+                                    .infoactividad span{
+                                        font-size: calc(.6em + .6vw);
+                                    }
+                                    .left-container-arrow{
+                                        height: 0;
+                                        width: 0;
+                                        position: absolute;
+                                        top: 28px;
+                                        z-index: 1;
+                                        border-top: 15px solid transparent;
+                                        border-bottom: 15px solid transparent;
+                                        border-left: 15px solid #000000;
+                                        right: -15px;
+                                    }
+                                    .right-container-arrow{
+                                        height: 0;
+                                        width: 0;
+                                        position: absolute;
+                                        top: 28px;
+                                        z-index: 1;
+                                        border-top: 15px solid transparent;
+                                        border-bottom: 15px solid transparent;
+                                        border-right: 15px solid #000000;
+                                        left: -15px;
+                                    }
+                                    @media screen and (max-width: 600px) {
+                                        .timeline{
+                                            margin: 10px auto;
+                                        }
+                                        .timeline::after{
+                                            left: 31px;
+                                        }
+                                        .contenedoractividades{
+                                            width: 100%;
+                                            padding-left: 80px;
+                                            padding-right: 25px;
+                                        }
+                                        .right-container{
+                                            left: 0;
+                                        }
+        
+                                        .left-container img, .right-container img{
+                                            left: 10px;
+                                        }
+        
+                                        .left-container-arrow, .right-container-arrow{
+                                            border-right: 15px solid #000000;
+                                            border-left: 0;
+                                            left: -15px;
+                                        }
+                                    }
+                                </style>
+                                <h2 class="text-center text-uppercase fs-1">Registro de Actividad</h2>
+                                <h5 class="text-center text-muted text-uppercase fw-light fs-6">Información de mi cuenta</h5>
+        
+                                <!--notifi-->
+                                <div class="container-fluid pt-4">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6 bg-dark border border-white">
+                                            <div class="card m-2 bg-transparent border-0" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-5 bg-white d-flex justify-content-center align-items-center rounded-1">
+                                                        <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_image7BE8FC.png" style="height:3.5vw; min-height: 30px;">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="card-body text-light">
+                                                            <h5 class="card-title fw-light text-uppercase">Obras</h5>
+                                                            <p class="card-text"><strong>200</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3  col-sm-6 bg-dark border border-white">
+                                            <div class="card m-2 bg-transparent border-0" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-5 bg-white d-flex justify-content-center align-items-center rounded-1">
+                                                        <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_heartFC6BF5.png" style="height:3.5vw; min-height: 30px;">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="card-body text-light">
+                                                            <h5 class="card-title fw-light text-uppercase">LIKES</h5>
+                                                            <p class="card-text"><strong>510</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3  col-sm-6 bg-dark border border-white">
+                                            <div class="card m-2 bg-transparent border-0" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-5 bg-white d-flex justify-content-center align-items-center rounded-1">
+                                                        <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_money.png" style="height:3.7vw; min-height: 30px;">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="card-body text-light">
+                                                            <h5 class="card-title fw-light text-uppercase">VENTAS</h5>
+                                                            <p class="card-text"><strong>130</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3  col-sm-6 bg-dark border border-white">
+                                            <div class="card m-2 bg-transparent border-0" style="max-width: 540px;">
+                                                <div class="row g-0">
+                                                    <div class="col-5 bg-white d-flex justify-content-center align-items-center rounded-1">
+                                                        <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_bagFFD033.png" style="height:3.7vw; min-height: 30px;">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <div class="card-body text-light">
+                                                            <h5 class="card-title fw-light text-uppercase">COMPRAS</h5>
+                                                            <p class="card-text"><strong>20</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!--LineTime-->
+                                <div class="row row-cols-1 row-cols-md-2 g-4 pt-4">
+                                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                        <div class="card rounded-0">
+                                            <div class="card-header bg-dark rounded-0">
+                                                <div class="row pb-1 pt-1">
+                                                    <div class="col-9 text-light text-uppercase">
+                                                        <h5 class="card-title text-light fw-light text-uppercase pt-2">Month</h5>
+                                                    </div>
+                                                    <div class="col-3 d-flex justify-content-end">
+                                                            <button class="btn btn-dark text-white" data-bs-toggle="collapse" href="#timelinemes" role="button" aria-expanded="false" aria-controls="collapseExample">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body d-none d-lg-block">
+                                                <div class="collapse show mx-md-3" id="timelinemes">
+                                                    <div class="nav flex-column nav-pills m-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                            <button class="nav-link active rounded-0" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Enero</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Febrero</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Marzo</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Abril</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Mayo</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Junio</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Julio</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Agosto</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Septiembre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Octubre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Noviembre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Diciembre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body d-block d-lg-none">
+                                                <div class="collapse show mx-md-3" id="timelinemes">
+                                                    <div class="nav nav-pills nav-fill m-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                            <button class="nav-link active rounded-0" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Enero</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Febrero</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Marzo</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Abril</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Mayo</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Junio</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Julio</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Agosto</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Septiembre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Octubre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Noviembre</button>
+                                                            <button class="nav-link rounded-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Diciembre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                                        <div class="card rounded-0">
+                                            <div class="card-header bg-dark rounded-0">
+                                                <div class="row pb-1 pt-1">
+                                                    <div class="col-9 text-light text-uppercase">
+                                                    <h5 class="card-title text-light pt-2 text-uppercase fw-light">Actividades</h5>
+                                                    </div>
+                                                    <div class="col-3 d-flex justify-content-end">
+                                                        <button class="btn btn-dark text-white" data-bs-toggle="collapse" href="#timelineact" role="button" aria-expanded="false" aria-controls="collapseExample">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body" style="max-height: 543px; overflow-y: auto;">
+                                                <div class="collapse show mx-md-3" id="timelineact">
+                                                    <div class="tab-content" id="v-pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                            <div class="timeline">
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Concurso</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/01</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Inicio su proceso de inscripción al concurso</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades right-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Ficha técnica</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">21/01</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p>Registro la obra ID:01253 para obtener su ficha ténica</p>
+                                                                        <span class="right-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_shop.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Compra</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/01</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Adquirió la obra ID:0487 desde galería online y ya se comenzó el proceso para el envío de la misma</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades right-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_shop.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Compra</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/01</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Adquirió la obra ID:0487 desde galería online y ya se comenzó el proceso para el envío de la misma</p>
+                                                                        <span class="right-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_shop.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Compra</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/01</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Adquirió la obra ID:0487 desde galería online y ya se comenzó el proceso para el envío de la misma</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                            <div class="timeline">
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_sold.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Galería</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/02</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Publicó la obra ID:08045 en la galería virtual</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades right-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_envio.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Concurso</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">21/02</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p>Realizó el envío de su obra para el concurso, se encuentra en estado pendiente de entrega</p>
+                                                                        <span class="right-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Ficha técnica</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/02</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum corporis ea saepe quam maiores.</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                            <div class="timeline">
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Actividad 01</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/03</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum corporis ea saepe quam maiores.</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades right-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Actividad 02</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">21/03</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum corporis ea saepe quam maiores.</p>
+                                                                        <span class="right-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contenedoractividades left-container">
+                                                                    <img src="https://haidejaquelineaf.github.io/b-artemxv1/Assets/img/ImgsIconos/icon_registro.png">
+                                                                    <div class="infoactividad bg-dark text-light">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12 col-md-8">
+                                                                                <h2>Actividad 03</h2>
+                                                                            </div>
+                                                                            <div class="col-sm-12 col-md-4">
+                                                                                <span class="badge bg-primary rounded-0">20/03</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum corporis ea saepe quam maiores.</p>
+                                                                        <span class="left-container-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                            <div class="timeline">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!--Grafica principal-->
+                                <div class="container-fluid mt-5">
+                                    <div class="card  border rounded-0">
+                                        <div class="card-header bg-dark rounded-0">
+                                            <div class="row pb-1 pt-1">
+                                                <div class="col-9 text-light text-uppercase">
+                                                    <h2 class="fw-light fs-3" style="letter-spacing: .2em;">Gráfica de ventas</h2>
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end">
+                                                    <button class="btn btn-dark text-white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body" style="max-height: 450px; overflow-y: auto;">
+                                            <div class="collapse show mx-3" id="collapseExample">
+                                                <div  class="row align-items-center">
+                                                    <div class="col-md-8">
+                                                        <div class="container-fluid bg-transparent" style="min-width: 500px;">
+                                                            <canvas class="pt-3" id="myChart"></canvas>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 fw-light">
+                                                        <div class="row gy-3 mx-md-4"> 
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">Obras gráficas vendidas</div>
+                                                                    <div class="col-sm-4 text-end"><strong>25</strong>/40</div>
+                                                                    <div class="col-12">
+                                                                        <div class="progress rounded-0" style="background: #2f353b;">
+                                                                            <div class="progress-bar" role="progressbar" style="width: 63%; background: #6da6b9;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">Obras gráficas valuadas</div>
+                                                                    <div class="col-sm-4 text-end"><strong>12</strong>/40</div>
+                                                                    <div class="col-12">
+                                                                        <div class="progress rounded-0" style="background: #2f353b;">
+                                                                            <div class="progress-bar" role="progressbar" style="width: 30%; background: #6f7075;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">Obras plásticas vendidas</div>
+                                                                    <div class="col-sm-4 text-end"><strong>20</strong>/30</div>
+                                                                    <div class="col-12">
+                                                                        <div class="progress rounded-0" style="background: #2f353b;">
+                                                                            <div class="progress-bar" role="progressbar" style="width: 67%; background: #326b7e;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">Obras plásticas evaluadas</div>
+                                                                    <div class="col-sm-4 text-end"><strong>15</strong>/30</div>
+                                                                    <div class="col-12">
+                                                                        <div class="progress rounded-0" style="background: #2f353b;">
+                                                                            <div class="progress-bar" role="progressbar" style="width: 50%; background: #8FC1A9;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!--graficas secundarias-->
+                                <div class="container-fluid mt-5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card border rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row pb-1 pt-1">
+                                                        <div class="col-9 text-light text-uppercase">
+                                                            <h2 class="fw-light fs-3" style="letter-spacing: .2em;">Gráfica de ventas</h2>
+                                                        </div>
+                                                        <div class="col-3 d-flex justify-content-end">
+                                                            <button class="btn btn-dark text-white" data-bs-toggle="collapse" href="#graficaline" role="button" aria-expanded="false" aria-controls="collapseExample">-</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" style="max-height: 350px; overflow-y: auto;">
+                                                    <div class="collapse show mx-md-3" id="graficaline">
+                                                        <div  class="row align-items-center pb-3">
+                                                            <div class="col-12 pb-3">
+                                                                <div class="container-fluid bg-transparent" style="min-width: 500px;">
+                                                                    <canvas class="pt-3" id="myChartline"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card border rounded-0">
+                                                <div class="card-header bg-dark rounded-0">
+                                                    <div class="row pb-1 pt-1">
+                                                        <div class="col-9 text-light text-uppercase">
+                                                            <h2 class="fw-light fs-3" style="letter-spacing: .2em;">Gráfica de ventas</h2>
+                                                        </div>
+                                                        <div class="col-3 d-flex justify-content-end">
+                                                            <button class="btn btn-dark text-white" data-bs-toggle="collapse" href="#graficadona" role="button" aria-expanded="false" aria-controls="collapseExample">-</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" style="max-height: 350px; overflow-y: auto;">
+                                                    <div class="collapse show mx-md-3" id="graficadona">
+                                                        <div  class="row align-items-center pb-3">
+                                                            <div class="col-12 pb-3">
+                                                                <div class="container-fluid bg-transparent" style="min-width: 500px;">
+                                                                    <canvas class="pt-3" id="myChartdona"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        <!--FIN SEC4_SUBSEC5 ACTIVIDAD-->
+        
+                    </div>
+                </div>
+            </div>
+        <!--FIN ACTIVIDAD DEL USUARIO-->
+               
+                <!------------------------------------------------------------------------ MODAL --------------------------------------------------------------------->
+        <!---MODAL ESTUDIOS-->
+        <div class="modal fade" id="mdlperfilestudios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Formación académica</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-6">
+                                <label for="validationDefault03" class="form-label">Institución educativa</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ffin_estudios_perfil" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault04" class="form-label">Nivel de estudios</label>
+                                <select class="form-select rounded-0" id="validationDefault04" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Licenciatura</option>
+                                    <option>Maestría</option>
+                                    <option>Doctorado</option>
+                                    <option>Postoctorado</option>
+                                    <option value="">Residencias artísticas</option>
+                                    <option value="">Investigación y academia</option>
+                                </select>
+                            </div>
+                            <div class="col-md-9">
+                                <label for="nomtitulo_obtenido" class="form-label">Título</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulo_obtenido" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que acredite sus estudios</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL ESTUDIOS-->
+
+    <!---MODAL CURSOS-->
+        <div class="modal fade" id="mdlperfilcursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Cursos extracurriculares</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-6">
+                                <label for="institucion_cursos_perfil" class="form-label">Institución educativa</label>
+                                <input type="text" class="form-control rounded-0" id="institucion_cursos_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="finicio_curso_perfil" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="finicio_curso_perfil" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ffin_curso_perfil" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_curso_perfil" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="nomcurso_perfil" class="form-label">Nombre del curso</label>
+                                <input type="text" class="form-control rounded-0" id="nomcurso_perfil" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="docacreditacion_curso_perfil" class="form-label">Documento de acreditación</label>
+                                <input type="file" class="form-control rounded-0" id="docacreditacion_curso_perfil" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="descripcion_curso_perfil" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="descripcion_curso_perfil" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL CURSOS-->
+
+    <!---MODAL EXPERIENCIA-->
+        <div class="modal fade" id="mdlperfilexperiencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content border-0 rounded-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Experiencia profesional</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-8">
+                                <label for="cargo_experiencia_perfil" class="form-label">Cargo</label>
+                                <input type="text" class="form-control rounded-0" id="cargo_experiencia_perfil" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="tipoempleo_experiencia_perfil" class="form-label">Tipo de empleo</label>
+                                <select class="form-select rounded-0" id="tipoempleo_experiencia_perfil" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Jornada completa</option>
+                                    <option>Jornada parcial</option>
+                                    <option>Autónomo</option>
+                                    <option>Profesional independiente</option>
+                                    <option>Contrato temporal</option>
+                                    <option>Contrato de prácticas</option>
+                                    <option>Contrato de formación</option>
+                                    <option>Temporal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                    <label for="validationDefault05" class="form-label">Actualmente tienes este cargo</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Sí</label>
+                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ffin_estudios_perfil" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationDefault04" class="form-label">Fecha de finalización</label>
+                                <input type="date" class="form-control rounded-0" id="ffin_estudios_perfil" required>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="nomempresa" class="form-label">Nombre de la empresa</label>
+                                <input type="text" class="form-control rounded-0" id="nomempresa" value="" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="ubicacionempresa" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacionempresa" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que acredite esta información</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción del empleo</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL EXPERIENCIA-->
+
+    <!---MODAL PREMIOS-->
+        <div class="modal fade" id="mdlperfilpremios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Premios recibidos</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Institución que lo otorga</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ubicacioninstitucion" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacioninstitucion" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de expedición</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <label for="nomtitulocurso" class="form-label">Título</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulocurso" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL PREMIOS-->
+
+    <!---MODAL EXPOSICIONES-->
+        <div class="modal fade" id="mdlperfilexposiciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Exposiciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Nombre de la organización</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="ubicacionorganizacion" class="form-label">Ubicación</label>
+                                <input type="text" class="form-control rounded-0" id="ubicacionorganizacion" placeholder="Ej. Zacatecas, México" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de exposición</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <label for="nomtituloexposicion" class="form-label">Título de la exposición</label>
+                                <input type="text" class="form-control rounded-0" id="nomtituloexposicion" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label">Exposición</label>
+                                <select class="form-select rounded-0" id="validationDefault04" required>
+                                    <option selected disabled value="">Seleccionar</option>
+                                    <option>Individual</option>
+                                    <option>Colectiva</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL EXPOSICIONES-->
+
+    <!---MODAL PUBLICACIONES-->
+        <div class="modal fade" id="mdlperfilpublicaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Publicaciones</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <form class="row g-3">
+                            
+                            <div class="col-md-9">
+                                <label for="validationDefault03" class="form-label">Revista/Artículo/Organización</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault03" placeholder="Dpto. Cultura" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationDefault05" class="form-label">Fecha de publicación</label>
+                                <input type="date" class="form-control rounded-0" id="validationDefault05" required>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <label for="nomtitulopublicacion" class="form-label">Título de la publicación</label>
+                                <input type="text" class="form-control rounded-0" id="nomtitulopublicacion" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label">Redactor/Autor de la publicación</label>
+                                <input type="text" class="form-control rounded-0" id="validationDefault04" value="" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefaultUsername" class="form-label">Documento que lo acredite</label>
+                                <input type="file" class="form-control rounded-0" id="validationDefaultUsername" required>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 border-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark rounded-0 border-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL PUBLICACIONES-->
+
+    <!---MODAL MEMBRESÍA-->
+        <div class="modal fade" id="mdlperfilmembresia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-0 border-0">
+                    <div class="modal-header bg-dark rounded-0">
+                        <h5 class="modal-title text-light" id="exampleModalLabel">Adquirir membresía semestral</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 450px;overflow-y: auto;">
+                        <h5 class="fs-1 text-end"><ion-icon name="help-circle-sharp" onclick="mdlDudasPlanPagos();"></ion-icon></h5>
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-lg-4 g-2 g-lg-3">
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 text-center bg-secondary text-uppercase text-light">básico <br> $10.00</h2>
+                                            <p style="text-align: justify;">Posibilidad de acceder al sistema como usuario artista, tenedor y vendedor. <br> Además, otros beneficios como el acceso a:</p>
+                                            <ul>
+                                                <li>Galería completa</li>
+                                                <li>Publicar obras en galería</li>
+                                                <li>Ficha técnica</li>
+                                                <li>Concurso</li>
+                                                <li>Catálogos</li>
+                                                <li>Solicitar certificado de precio-salida</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-1 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-secondary rounded-0" role="button" id="1">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 bg-dark text-light text-center text-uppercase">Profesional <br> $30.00</h2>
+                                            <p style="text-align: justify;" class="px-3">Posibilidad de acceder al sistema como usuario artista, tenedor, vendedor y subastador.<br> Además, otros beneficios como el acceso a:</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-dark rounded-0" role="button" id="2">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="container">
+                                            <h2 class="pt-2 bg-primary text-light text-center text-uppercase">Premium <br> $60.00</h2>
+                                            <p style="text-align: justify;" class="px-3">Posibilidad de acceder al sistema como usuario tipo artista, vendedor, subastador e inversionista.<br> Además, otros beneficios:</p>
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <a data-bs-toggle="modal" href="#mdlInformacionAdd" class="btn btn-primary rounded-0" role="button" id="3">
+                                                Adquirir
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary border-0 rounded-0" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-dark border-0 rounded-0">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---FIN MODAL MEMBRESÍA-->
+
+
+    <!---JS------->
+        <!--JS-->
+            <script>
+                var altura = document.getElementById('menu').offsetHeight;
+                var total = window.innerHeight;
+                var resultado = parseInt(total) - parseInt(altura);
+                document.getElementById("contPrincipal").style.height = resultado + "px";
+            </script>
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--chart js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script>
+            let chart = new Chart(myChart, {
+                type:'bar',
+                data: {
+                    labels: ['ORC','OGVG', 'CPSOG', 'OPVG', 'CPSOP', 'ORFT', 'ORPS'],
+                    datasets: [{
+                        data: [5,25,12,20,15,75,35],
+                        backgroundColor: ['#a9c3d0', '#6da6b9','#6f7075', '#326b7e', '#8FC1A9', '#7CAA98', '#212529'],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options : {
+                    legend:{
+                        display: false
+                    },
+                    tooltips: {
+                        enabled: true
+                    }
+                }
+            });
+
+            let chartline = new Chart(myChartline,{
+                type: 'line',
+                data:{
+                    labels: ['D1', 'D2', 'D3', 'D4', 'D5'],
+                    datasets: [{
+                        label: 'Progreso',
+                        data: [64,36,20,50,15],
+                        backgroundColor: '#8FC1A9',
+                        borderColor: '#fff',
+                        hoverBorderWidth:2,
+                        hoverBorderColor:'#6f7075'
+                    }]
+                },
+                //opciones
+            });
+
+            let chartdona = new Chart(myChartdona,{
+                type: 'doughnut',
+                data:{
+                    labels: ['Dato1', 'Dato2', 'Dato3', 'Dato4', 'Dato5'],
+                    datasets: [{
+                        label: 'Progreso',
+                        data: [64,36,20,50,15],
+                        backgroundColor: ['#a9c3d0', '#6da6b9','#6f7075', '#326b7e', '#8FC1A9', '#7CAA98', '#212529'],
+                        borderColor: '#fff',
+                        hoverBorderWidth:2,
+                        hoverBorderColor:'#6f7075'
+                    }]
+                },
+                //opciones
+            });
+
+        </script>
+        <!--SweetAlert2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!--FALTA AGREGAR LAS LICENCIAS Y DERECHOS DE AUTOR DE LAS HERRAMIENTAS QUE UTILIZAMOS-->
+</body>
+</html>
